@@ -1,0 +1,25 @@
+{
+  "name": "combotester",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "bin": "./bin/cmd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devWayne/comboTester.git"
+  },
+  "author": "Jarvan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devWayne/comboTester/issues"
+  },
+  "homepage": "https://github.com/devWayne/comboTester#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "nl-clilog": "^1.1.1",
+    "node-fetch": "^1.3.3"
+  }
+}
