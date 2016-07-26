@@ -5,13 +5,7 @@ const log = require('nl-clilog');
 const fetch = require('node-fetch');
 
 
-var argv = require("minimist")(process.argv.slice(2), {
-  alias: {
-    'daily': 'd',
-    'publish': 'p'
-  },
-  boolean: ['daily', 'publish']
-});
+var argv = require("minimist")(process.argv.slice(2));
 
 console.log(argv._[0]);
 
@@ -32,6 +26,8 @@ comboUrlList.forEach(function(_url){
             log.error(res.status);
         
         }
+    }).catch(ex=>{
+        log.error('ex: '+ex);
     });
 });
 
